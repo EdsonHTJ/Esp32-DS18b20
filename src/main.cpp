@@ -4,9 +4,9 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 
-#define WIFISSID "D&D"
-#define PASSWORD "29091999"
-#define TOKEN "BBFF-8gKvYsLxIiaFzKCFANnxz0ECoVvw63" 
+#define WIFISSID "SSID"
+#define PASSWORD "PASS"
+#define TOKEN "TOKEN" 
 #define MQTT_CLIENT_NAME "RandomName" 
 
 
@@ -56,7 +56,7 @@ void setup() {
   WiFi.begin(WIFISSID, PASSWORD);
 
   Serial.println();
-  Serial.print("Esperando Por conexoes...");
+  Serial.print("Waiting Connections...");
   
   while (WiFi.status() != WL_CONNECTED) {
     Serial.print(".");
